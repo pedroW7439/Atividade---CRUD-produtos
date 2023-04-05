@@ -1,0 +1,22 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.adicionarTag = exports.listarPorTag = exports.listarPorFaixaDePreco = exports.listarPorCategoria = exports.listarTodos = exports.apagaProduto = exports.atualizarProduto = exports.criarProduto = void 0;
+const create_product_1 = __importDefault(require("./create-product"));
+exports.criarProduto = create_product_1.default;
+const update_products_1 = __importDefault(require("./update-products"));
+exports.atualizarProduto = update_products_1.default;
+const delete_product_1 = __importDefault(require("./delete-product"));
+exports.apagaProduto = delete_product_1.default;
+const list_all_1 = __importDefault(require("./list-all"));
+exports.listarTodos = list_all_1.default;
+const list_by_category_1 = __importDefault(require("./list-by-category"));
+exports.listarPorCategoria = list_by_category_1.default;
+const list_by_price_range_1 = __importDefault(require("./list-by-price-range"));
+exports.listarPorFaixaDePreco = list_by_price_range_1.default;
+const list_by_tag_1 = __importDefault(require("./list-by-tag"));
+exports.listarPorTag = list_by_tag_1.default;
+const add_new_tag_1 = __importDefault(require("./add-new-tag"));
+exports.adicionarTag = add_new_tag_1.default;
